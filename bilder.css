@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+  }
+
+
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: auto auto auto;
+    gap: 2vh;
+    row-gap: 1vw;
+}
+
+.pic1 {
+    /*grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row:1; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row:1;
+    background-image: url("./Images/Lashliftafter.jpg" );
+    width: 100%;
+    background-size: contain;
+}
+
+.pic2 {
+    /*grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row:1; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row:1;
+    background-image: url("./Images/lashliftbefore.jpg" );
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.pic3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row:1;
+    background-image: url("./Images/lashlift.jpg" );
+    width: 100%;
+    background-size: contain;
+}
+
+.section-video {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row:2;
+}
+
+
+  /*
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 2vh;
+    row-gap: 2vw;
+  }
+
+  .pic1{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row: 1;
+
+  }
+
+  .pic2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+   
+
+  }
+
+  .pic3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1;
+    
+  }
+
+  .section-video{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  img {
+    transform:rotate(90deg)
+
+  } */

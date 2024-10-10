@@ -22,7 +22,7 @@ body {
   height: 100%;
 }
 
-#content-container > *:not(.fullwidth) {
+.content-container > *:not(.fullwidth) {
   max-width: 1152px;
   margin: 0 auto;
   padding: 30px 45px 30px 45px;
@@ -70,8 +70,8 @@ button {
 but its not as ''fancy'' as the page is now */
 
 .parallax {
-  background-image: url("./../Images/eyes.gif");
-  min-height: 70vh;
+  background-image: url("./../Images/eyesgiftest.gif");
+  min-height: 67vh;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
