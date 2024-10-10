@@ -24,14 +24,14 @@ body {
 
 #content-container > *:not(.fullwidth) {
   max-width: 1152px;
-  margin: 30px auto;
+  margin: 0 auto;
+  padding: 30px 45px 30px 45px;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 4px 51px 4px 17px;
   align-items: center;
+  padding: 10px 15px;
 }
 
 .logo {
@@ -39,12 +39,35 @@ header {
   height: auto;
   width: auto;
   justify-content: auto;
+  margin-right: auto;
 }
 
 .navbar {
   color: #ffe599;
   font-size: 23px;
 }
+
+.desktop-navbar,
+.mobile-navbar {
+  color: #ffe599;
+  font-size: 23px;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+button {
+  color: #ffe599;
+  background-color: #28000a;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/*IMPROVE!!
+-Tried background-size: contain. Doesnt act as i wish.
+-I can crop the video from my phone and use contain, it works
+but its not as ''fancy'' as the page is now */
 
 .parallax {
   background-image: url("./../Images/eyes.gif");
@@ -66,7 +89,7 @@ header {
 
 .section-main-title {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 2;
   grid-row: 1;
 }
 .section-main-paragraph {
@@ -82,20 +105,20 @@ header {
   grid-row-end: 4;
 }
 
-.section1 {
+.section-treatment {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 
-.section2 {
+.section-before-treatment {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
 }
-.section3 {
+.section-after-treatment {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -123,5 +146,73 @@ header {
   max-width: 406px;
 }
 
-@media screen (width<=1600px) {
+.section-main {
+  padding: 30px 30px 0 30px;
+  border: 50px;
+  display: flex;
+  color: #000;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.section-main > div > p {
+  padding: 0 0 20px 0;
+  max-width: 750px;
+}
+
+@media (max-width: 768px) {
+  .desktop-navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1095px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+    row-gap: 30px;
+  }
+
+  .section-main-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+  }
+  .section-main-paragraph {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+  }
+
+  .section-treatment {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .section-before-treatment {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .section-after-treatment {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+
+  .section-sustainability {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  }
 }
