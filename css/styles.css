@@ -35,24 +35,27 @@ header {
   padding: 10px 15px;
 }
 
+
 .logo {
   max-height: 80px;
   height: auto;
   width: auto;
   margin-right: auto;
 }
-
-.navbar {
-  color: #ffe599;
+.interested  {
+  color: #28000a; 
   font-size: 23px;
 }
 
 .desktop-navbar,
-.mobile-navbar {
+.mobile-navbar, .navbar  {
   color: #ffe599;
   font-size: 23px;
 }
-
+.interested  {
+  color: #28000a; 
+  font-size: 23px;
+}
 .mobile-navbar {
   display: none;
 }
