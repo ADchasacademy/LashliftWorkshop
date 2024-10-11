@@ -8,6 +8,7 @@
   font: inherit;
   vertical-align: baseline;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -159,6 +160,82 @@ but its not as ''fancy'' as the page is now */
   padding: 0 0 20px 0;
   max-width: 750px;
 }
+.flex-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.bybexterbrand {
+  flex-basis: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bybexterbrand > img {
+  min-width: 100%;
+}
+
+.beforealashlift,
+.afterlashlift {
+  flex-basis: calc(100% / 3 * 2);
+  display: flex;
+}
+.test {
+  flex-basis: calc(100% / 3 * 2);
+  display: flex;
+  flex-wrap: wrap;
+}
+.test > .afterlashlift {
+  flex-basis: 100%;
+  display: flex;
+}
+.test > div > img {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.instagram > img,
+.youtube > img {
+  max-height: 100%;
+}
+.instagram,
+.youtube {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(50%);
+  max-height: 1000px;
+}
+
+.flex-container1 > div > img {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.video {
+  flex-basis: calc(100% / 3);
+  display: flex;
+  flex-grow: 1;
+  max-height: 2000px;
+  width: 100%;
+}
+
+.video > video {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.youtube,
+.instagram,
+.video,
+.afterlashlift,
+.beforealashlift,
+.bybexterbrand {
+  padding: 0.5%;
+}
 
 @media (max-width: 768px) {
   .desktop-navbar {
@@ -169,6 +246,25 @@ but its not as ''fancy'' as the page is now */
   }
 }
 
+@media (max-width: 813px) {
+  .flex-container1 {
+    display: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1 fr);
+    grid-template-rows: repeat(5);
+    gap: 0.5vh;
+  }
+  .bybexterbrand {
+    grid-row: 1;
+  }
+  .beforealashlift {
+    grid-row: 2;
+  }
+  /*Not working as wished, why?*/
+  .video {
+    grid-row: 4;
+  }
+}
 @media (max-width: 1095px) {
   .grid-container {
     display: grid;

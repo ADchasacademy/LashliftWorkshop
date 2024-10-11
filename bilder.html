@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bilder - BeautybyAD</title>
-    <link rel="stylesheet" href="./bilder.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <!--Logo for the Beauty by AD brand-->
+      <a href="./index.html">
       <img
         class="logo"
         src="./Images/BeautybyAD-Logo.png"
         alt="golden beauty by AD logo picture"
-      />
+      /></a>
       <!---Navigation link to homepage-->
       <nav>
         <a href="./index.html" class="navbar">Hem</a>
@@ -26,24 +27,31 @@
         </a>
       </nav>
     </header>
-
-    <main class="grid-container">
-      <img class="box1" src="./Images/bybexter.png" />
-      <img class="box2" src="./Images/lashliftbefore.jpg" />
-      <img class="box3" src="./Images/Lashliftafter.jpg" />
-      <img class="box4" src="./Images/Lashlift.jpg" />
-
-      <iframe
-        class="section-video"
-        src="https://www.youtube.com/embed/q248ajkuqkg"
-        title="6 October 2024"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+  
+    <main class="flex-container1">
+      <!--The lashlift brand used-->
+      <div class="bybexterbrand">
+        <!--Images of the lashliftartist work-->
+        <img src="./Images/bybexter.png" />
+      </div>
+      <div  class="beforealashlift"><img src="./Images/before.jpg" /> </div>
+      
+      
+      <!--Video of the lashliftartist work-->
+<div class="video">
+    <video controls autoplay src="Images/lashlift.mov">
+    </div>
+<!--Images of the lashliftartist work-->
+     <div class="test"><div class="afterlashlift">
+      <img src="./Images/after.jpg" /></div>
+      <!--Social media-->
+    <div class="instagram"> <img src="Images/instagram.svg" alt="instagram" ></div>
+  <div class="youtube"><img src="Images/youtube.svg" alt=" youtube" ></div></div> 
     </main>
   </body>
+
 </html>
 
-<!--Images of the lashliftartist work-->
-<!--Video of the lashliftartist work-->
+
+
+
