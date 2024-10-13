@@ -12,16 +12,12 @@
 }
 
 body {
-  background: linear-gradient(
-    180deg,
-    #a56171 12%,
-    #964e60 30%,
-    #5e2b37 100%,
-    #602c38 100%
-  );
+  background-color:#764d3b;
   font-family: Poppins;
   height: 100%;
 }
+
+
 
 .content-container > *:not(.fullwidth) {
   max-width: 1152px;
@@ -35,25 +31,25 @@ header {
   padding: 10px 15px;
 }
 
-
 .logo {
   max-height: 80px;
   height: auto;
   width: auto;
   margin-right: auto;
 }
-.interested  {
-  color: #28000a; 
+.interested {
+  color: #28000a;
   font-size: 23px;
 }
 
 .desktop-navbar,
-.mobile-navbar, .navbar  {
+.mobile-navbar,
+.navbar {
   color: #ffe599;
   font-size: 23px;
 }
-.interested  {
-  color: #28000a; 
+.interested {
+  color: #28000a;
   font-size: 23px;
 }
 .mobile-navbar {
@@ -65,21 +61,67 @@ button {
   background-color: #28000a;
   padding: 10px;
   border-radius: 15px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
-/*IMPROVE!!
--Tried background-size: contain. Doesnt act as i wish.
--I can crop the video from my phone and use contain, it works
-but its not as ''fancy'' as the page is now */
+button:hover {
 
-.parallax {
-  background-image: url("./../Images/eyesgiftest.gif");
-  min-height: 67vh;
+  color: #28000a; 
+  background-color:#ffe599;
+
+}
+
+footer {
+  background-color: #2c2a2a;
+  padding-top:5px;
+  font-size: 16px;
+  max-height: auto;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.social-media {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+ .social-media>p {
+  margin: 2px;
+  color: #ffe599
+  
+ }
+
+ .hero-video {
+  max-height: 50%;
+  
+ }
+ .instagram, .youtube {
+  padding: 5px;
+  cursor: pointer;
+ }
+
+ .social-media >.instagram img, .youtube img {
+  width: 24px;
+  height: 24px;
+
+ }
+
+ .hero-video {
+  max-height: 50%;
+  
+ }
+
+.lashvideo {
+  max-height: 87vh;
   width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
 }
 
 .grid-container {
@@ -199,12 +241,12 @@ but its not as ''fancy'' as the page is now */
   max-width: 100%;
 }
 
-.instagram > img,
-.youtube > img {
+.lashlift1 > img,
+.lashlift2 > img {
   max-height: 100%;
 }
-.instagram,
-.youtube {
+.lashlift1,
+.lashlift2 {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(50%);
@@ -230,14 +272,16 @@ but its not as ''fancy'' as the page is now */
   object-position: center;
 }
 
-.youtube,
-.instagram,
+.lashlift2,
+.lashlift1,
 .video,
 .afterlashlift,
 .beforealashlift,
 .bybexterbrand {
   padding: 0.5%;
 }
+
+
 
 @media (max-width: 768px) {
   .desktop-navbar {
@@ -313,4 +357,7 @@ but its not as ''fancy'' as the page is now */
     grid-row-start: 5;
     grid-row-end: 5;
   }
-}
+
+
+  }
+
